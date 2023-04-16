@@ -1,0 +1,484 @@
+body {
+    font-size: 12px;
+    font-family: 'EB Garamond', serif;
+    background: url(../Imagens/fighting_game_animation_1.gif) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 120px;
+    height: 110px;
+}
+
+.cabecalho .titulo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Setas */
+.cards-slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-seta {
+    margin-top: 140px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+    border: 1px solid black;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: crimson;
+}
+
+.btn-seta img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Cards slider */
+
+.lista-cards {
+    position: relative;
+}
+
+
+.cartao {
+    background-color: #5c2f8a;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 300px;
+    padding: 12px;
+    border-radius: 25px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0;
+    transition: 0.3s ease-in-out
+    
+}
+
+.selecionado {
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Cartão1 */
+
+.container-imagem img{
+    width: 220px;
+    height: 240px;
+
+}
+
+
+.fundo-1 {
+    background: url(../Imagens/Jotaro-apontando.gif)
+    no-repeat;
+    background-position: 38%;
+    background-position-y: 8%;
+}
+
+.cartao .informacao{
+    margin-top: 90px;
+    background-color:#1F0840;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 240px;
+    height: 30px;
+    
+}
+
+
+.cartao .informacao .nome{
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #ffffff;    
+
+}
+.cartao .informacao .vida{
+    background-color:#6614D9;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cartao .descricao {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #411073;
+}
+.cartao .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #6F1FBF;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+
+.cartao .descricao .texto{
+    margin-top: -13px;
+    background-color:#5c2f8a;
+    color: #f1ecff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+/* Cartão2 */
+
+
+.fundo-2 {
+    background: url(../Imagens/Dio-brando-zaworld.gif)
+    no-repeat;
+    background-size: 175% ;
+    
+    
+}
+
+.cartao2 .informacao2 {
+    margin-top: 50px;
+    background-color:#997d28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 255px;
+    height: 30px;
+    right: 45px;
+    
+}
+
+.cartao2 .informacao2 .nome{
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #ffffff; 
+       
+
+}
+
+
+
+.cartao2 .informacao2 .vida{
+    background-color:#32ad5b;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartao2 .descricao2 {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #7FBF1F;
+    
+}
+
+
+.cartao2 .descricao2 .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #c99e1fee;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+.cartao2 .descricao2 .texto{
+    margin-top: -13px;
+    background-color:#8C4E03;
+    color: #f1ecff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.container-imagem2 img{
+    width: 230px;
+    height: 240px;
+
+}
+
+/* Cartão3 */
+
+.fundo-3 {
+    background: url(../Imagens/Dio-vampire.gif)
+    no-repeat;
+    background-position: 38%;
+    background-position-y: 8%;
+}
+
+.cartao3 .informacao3 {
+    margin-top: 50px;
+    background-color:#F2911B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 255px;
+    height: 30px;
+    right: 45px;
+    
+}
+
+.cartao3 .informacao3 .nome{
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #ffffff; 
+       
+
+}
+
+.cartao3 .informacao3 .vida{
+    background-color:#207309;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartao3 .descricao3 {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #7FBF1F;
+    
+}
+
+
+.cartao3 .descricao3 .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #c99e1fee;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+.cartao3 .descricao3 .texto{
+    margin-top: -13px;
+    background-color:#b69c50ee;
+    color: #f1ecff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+/* Cartão4 */
+
+.fundo-4 {
+    background: url(../Imagens/Jotaro\ vs\ dio.gif)
+    no-repeat;
+    background-position: 38%;
+    background-position-y: 8%;
+}
+
+.cartao4 .informacao4 {
+    margin-top: 50px;
+    background-color:#73126C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 255px;
+    height: 30px;
+    right: 45px;
+    
+}
+
+.cartao4 .informacao4 .nome{
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #ffffff; 
+       
+
+}
+
+.cartao4 .informacao4 .vida{
+    background-color:#D91480;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartao4 .descricao4 {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #73126C;
+    
+}
+
+
+.cartao4 .descricao4 .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #73126C;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+.cartao4 .descricao4 .texto{
+    margin-top: -13px;
+    background-color:#E0A0F2;
+    color: #f1ecff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+/* Cartão5 */
+
+.fundo-5 {
+    background: url(../Imagens/Jotaro-Kakyoin.gif)
+    no-repeat;
+    background-position: 38%;
+    background-position-y: 8%;
+}
+
+.cartao5 .informacao5 {
+    margin-top: 50px;
+    background-color:#3E732F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 255px;
+    height: 30px;
+    right: 45px;
+    
+}
+
+.cartao5 .informacao5 .nome{
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #ffffff; 
+       
+
+}
+
+.cartao5 .informacao5 .vida{
+    background-color: #142611;
+    color: #f1ecff;
+    padding: 3px 10px;   
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartao5 .descricao5 {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background: #8C251C;
+    
+}
+
+
+.cartao5 .descricao5 .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #222222;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+.cartao5 .descricao5 .texto{
+    margin-top: -13px;
+    background-color:#F2916D;
+    color: #f1ecff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}    
